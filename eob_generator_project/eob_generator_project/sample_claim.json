@@ -1,0 +1,57 @@
+{
+  "plan": {
+    "payer_name": "Sunrise Health Plan",
+    "plan_name": "Silver PPO 3000",
+    "deductible": 1000,
+    "deductible_met": 800,
+    "coinsurance_pct": 20,
+    "oop_max": 5000,
+    "oop_met": 1200
+  },
+  "member": {
+    "member_id": "M1001",
+    "name": "Anita Rao"
+  },
+  "provider": {
+    "provider_id": "P2001",
+    "name": "City Care Clinic",
+    "network": "In-Network"
+  },
+  "claim": {
+    "claim_id": "CLM-0001",
+    "received_date": "2026-09-20"
+  },
+  "lines": [
+    {
+      "service_date": "2026-09-10",
+      "code": "99213",
+      "description": "Office visit",
+      "billed": 200,
+      "allowed": 120,
+      "copay": 30
+    },
+    {
+      "service_date": "2026-09-10",
+      "code": "85025",
+      "description": "Complete blood count",
+      "billed": 90,
+      "allowed": 40
+    },
+    {
+      "service_date": "2026-09-10",
+      "code": "71046",
+      "description": "Chest X-ray",
+      "billed": 300,
+      "allowed": 180
+    },
+    {
+      "service_date": "2026-09-10",
+      "code": "S9999",
+      "description": "Cosmetic consultation",
+      "billed": 150,
+      "allowed": 150,
+      "covered": false,
+      "remark": "Cosmetic services are excluded from your plan."
+    }
+  ]
+}
